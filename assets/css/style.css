@@ -14,7 +14,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 960px;
+    max-width: 980px;
     margin: 0 auto;
     clear: both;
 }
@@ -121,7 +121,7 @@ h3, h2 {
 .main-section {
     float: left;
     width: 100%;
-    max-width: 960px;
+    max-width: 980px;
     padding: 30px;
     margin: 0 0 40px;
     background: #ffffff;
@@ -179,6 +179,10 @@ h3, h2 {
 #contact-form li {
     margin-bottom: 10px;
 }
+label, input[type=text], input[type=email], textarea {
+    display: block;
+    width: 100%;
+}
 
 label, input[type=text], input[type=email], textarea {
     height: 35px;
@@ -200,15 +204,31 @@ input[type=submit] {
     border: 0 none;
 }
 @media screen and (max-width: 980px) {
-
+    .container {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
+    .container {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 640px) {
     header#responsive-portfolio {
         position: static;
+    }
+    .container {
+        width: 100%;
+    }
+    
+    div.container a#logo {
+        width: 100%;
+    }
+    nav {
+        float:none;
+        margin: 0 auto;
+        text-align: center;
     }
 }
