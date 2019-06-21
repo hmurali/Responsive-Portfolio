@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
-        <title>Hari's Basic Portfolio</title>
+        <meta charset="UTF-8">
+        <title>Contact | Hari N. Murali</title>
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     </head>
     <body>
-        <header class="basic-portfolio">
-            <div class="wrapper">
-                <h1>Hari N. Murali</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="clearFix">
-                    <h1>About Me</h1>
-                    <!-- <img src="assets/images/Canada maple leaf gold coin.jpg"> -->
-                    <p>Hi There!</p>
-                </div>
+        <header id="responsive-portfolio">
+            <div class="container">
+                <a href="index.html" id="logo">Hari N. Murali</a>
+                <nav>
+                    <a href="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
             </div>
         </header>
+
+        <div id="main-container" class="container">
+            <section>
+                <h1>Contact</h1>
+
+                <form id="contact-form">
+                    <ul>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required="required">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@gmail.com" required="required">
+                        </li>
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required="required"></textarea>
+                        </li>
+                    </ul>
+                    <input type="submit">
+                </form>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container">
+                Copyright &copy;
+            </div>
+        </footer>
     </body>
 </html>
